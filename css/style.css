@@ -167,8 +167,9 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
 .phone .circle-container .circle {
   width: 100%;
   height: 100%;
+  display: flex;
   border: 4px var(--secondaryGrey) solid;
-  border-radius: 50px;
+  border-radius: 100%;
   background-color: #ddd;
 }
 
