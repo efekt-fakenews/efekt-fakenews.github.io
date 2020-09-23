@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>艾菲克特</title>
+
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img class="logo" src="images/logo電繪長.png" alt="store logo">
+            </a>
+            <div>
+                <!-- <div class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </div> -->
+            </div>
+            <ul class="drop-down-menu">
+                <li><a href="#">專業分析</a>
+                    <ul class="second-menu">
+                        <li><a href="#">概略總攬</a>
+                        </li>
+                        <li><a href="#">即時報</a>
+                        </li>
+                        <li><a href="#">For g0v</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">知識宣導</a>
+                </li>
+                <li><a href="#">關於我們</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /. navbar -->
+
+        <div class="container">
+
+            <!-- hero -->
+            <header class="hero">
+                <div class="title">
+                    <h2>即時報</h2>
+                </div>
+                <div class="search">
+                    <div class="condition">
+                        <div class="condistion-content">
+                            <div class="condition-title">
+                                查詢月份
+                            </div>
+                            
+                            <div class="input-daterange input-group" id="date">
+                                <input type="text" class="input-sm form-control" name="start" data-provide="datapicker" />
+                                <span class="input-group-addon">~</span>
+                                <input type="text" class="input-sm form-control" name="end" />
+                            </div>
+
+                            <div class="formStyle">
+                                <div class="date-select" id="date">
+                                    <input type="text" id="months" class="form-control" name="startMonth"
+                                        placeholder="選擇開始日期">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                    <span>~</span>
+                                    <input type="month" name="endMonth">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="condistion-content">
+                            <div class="condition-title">
+                                網域
+                            </div>
+                            <form action="">
+                                <select name="YourDate">
+                                    　<option value="Taipei">台北</option>
+                                    　<option value="Taoyuan">桃園</option>
+                                    　<option value="Hsinchu">新竹</option>
+                                    　<option value="Miaoli">苗栗</option>
+                                </select>
+                            </form>
+                        </div>
+                        <!-- <div class="condistion-content">
+                            <div class="condition-title">
+                                排序
+                            </div>
+                            <form action="">
+                                <select name="sort">
+                                    　<option value="TimeNewOld">時間 新-舊</option>
+                                    　<option value="TimeOldNew">時間 舊-新</option>
+                                    　<option value="domainSort">網域</option>
+                                    　<option value="classSort">類別</option>
+                                </select>
+                            </form>
+                        </div> -->
+
+                    </div>
+
+                    <div class="condition">
+                        <div class="condistion-content">
+                            <div class="condition-title">
+                                類別
+                            </div>
+                            <form class="checkbox-select">
+                                <input type="checkbox" value="0" name="selectAll"> 全選 <br>
+                                <input type="checkbox" value="1" name="medical"> 醫療類 <br>
+                                <input type="checkbox" value="2" name="ysbj"> 養生保健類 <br>
+                                <input type="checkbox" value="3" name="swac"> 食物安全類 <br>
+                                <input type="checkbox" value="4" name="tsl"> 同性戀 <br>
+                                <input type="checkbox" value="5" name="wssdl"> 衛生宣導類 <br>
+                                <input type="checkbox" value="6" name="other"> 其他
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </header>
+            <!-- /.hero -->
+
+            <!-- content -->
+
+            <!-- 文字雲.趨勢圖 -->
+            <section class="horizontal">
+                <div class="textCloud">
+                    <div class="section-title">
+                        <h3>文字雲</h3>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/textCloud.png" alt="" width="300">
+                    </div>
+                </div>
+                <div class="domainScore">
+                    <div class="section-title">
+                        <h3>網域評分趨勢圖</h3>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/wordart-09.png" alt="" width="300">
+                    </div>
+                </div>
+            </section>
+            <!-- /.文字雲.趨勢圖 -->
+
+            <!-- 網域關係圖 -->
+            <section class="vertical">
+                <div class="section-title">
+                    <h3>網域關係圖</h3>
+                </div>
+                <div class="img-container">
+                    <img src="images/wordart-09.png" alt="" width="300">
+                </div>
+            </section>
+            <!-- /.網域關係圖 -->
+
+            <!-- 文章列表 -->
+            <section class="vertical">
+                <div class="section-title">
+                    <h3>文章列表</h3>
+                    <div class="condistion-content">
+                        <div class="condition-title">
+                            排序
+                        </div>
+                        <form action="">
+                            <select name="sort">
+                                　<option value="TimeNewOld">時間 新-舊</option>
+                                　<option value="TimeOldNew">時間 舊-新</option>
+                                　<option value="domainSort">網域</option>
+                                　<option value="classSort">類別</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <article class="article">
+                    <div class="summary">這是一個真實的故事，加州一位女士在一家肉...</div>
+                    <div class="value">
+                        <div class="value-content">
+                            <div class="value-title">文章相似度</div>
+                            <div class="value-number">45%</div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-title">網域分數</div>
+                            <div class="value-number">63</div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-title">加權總分</div>
+                            <div class="value-number">60</div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="summary">~醫師分享~請大家收藏下面幾個健康知識！...</div>
+                    <div class="value">
+                        <div class="value-content">
+                            <div class="value-title">文章相似度</div>
+                            <div class="value-number">45%</div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-title">網域分數</div>
+                            <div class="value-number">63</div>
+                        </div>
+                        <div class="value-content">
+                            <div class="value-title">加權總分</div>
+                            <div class="value-number">60</div>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+            <!-- /.文章列表 -->
+
+            <!-- /.content -->
+        </div>
+        <!-- footer -->
+        <footer>
+            <img class="logo" src="images/logo電繪長.png" alt="store logo">
+            <div class="footer-link">
+                <a href="#">贊助我們</a>
+            </div>
+            <span>|</span>
+            <div class="footer-link">
+                <a href="#">如何使用</a>
+            </div>
+            <span>|</span>
+            <div class="footer-link">
+                <a href="#">聯絡我們</a>
+            </div>
+            <div class="link">
+                <span class="footer-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </span>
+                <span class="footer-icon">
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </span>
+            </div>
+
+        </footer>
+        <!-- /.footer -->
+    </div>
+
+    <script>
+
+        $(function () {
+            $('#date').datepicker({
+                startView: 3,
+                minView: 3,
+                autoclose: 'true',
+                format: 'yyyy/mm',
+                language: "zh-TW",
+            });
+
+            $('.input-daterange input').each(function() {
+                $(this).datepicker('clearDates');
+            });
+        });
+
+        // $(function showtimes() {
+        //     var NowDate = new Date();
+        //     var y = NowDate.getFullYear();
+        //     var m = NowDate.getMonth() + 1 < 10 ? "" + NowDate.getMonth() + 1 : NowDate.getMonth() + 1;
+        //     var showTime = y + '/' + m;
+        //     document.getElementById('months').value = showTime;
+        // });
+    </script>
+
+    <script src="app.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="locales/bootstrap-datepicker.zh-TW.min.js"></script>
+
+</body>
+
+</html>
