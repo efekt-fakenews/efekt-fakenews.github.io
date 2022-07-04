@@ -61,9 +61,9 @@ var app = new Vue({
         }
     },
     mounted() {
-        if(document.getRootNode().documentURI == "http://127.0.0.1:5500/index.html" || document.getRootNode().documentURI == "https://fakenewstw.tk/index.html" || document.getRootNode().documentURI == "https://fakenewstw.tk/") {
+        if(document.getRootNode().documentURI == "http://127.0.0.1:5500/index.html" || document.getRootNode().documentURI == "https://efekt-fakenews.github.io/index.html" || document.getRootNode().documentURI == "https://efekt-fakenews.github.io/") {
             this.indexWordCloud()
-        }else if(document.getRootNode().documentURI == "http://127.0.0.1:5500/report.html" || document.getRootNode().documentURI == "https://fakenewstw.tk/report.html") {
+        }else if(document.getRootNode().documentURI == "http://127.0.0.1:5500/report.html" || document.getRootNode().documentURI == "https://efekt-fakenews.github.io/report.html") {
             this.getSnaAPI(window.domain)
         }
     },
@@ -83,7 +83,7 @@ var app = new Vue({
         },
 
         apiPost() {
-            axios.post("https://140.124.93.123:8070/search", this.article)
+            axios.post("https://159.117.85.248:8079/search", this.article)
                 .then(response => {
                     var domainScore;
                     var articleScore;
@@ -147,7 +147,7 @@ var app = new Vue({
         },
 
         indexWordCloud() {            
-            const req = new Request('https://140.124.93.123:8070/word_cloud?start_time=2012/1/1&end_time=2019/1/1&cate=[1,2,3]')
+            const req = new Request('https://159.117.85.248:8079/word_cloud?start_time=2012/1/1&end_time=2019/1/1&cate=[1,2,3]')
             fetch(req)
                 .then(res => res.json())
                 .then(data => {
@@ -196,7 +196,7 @@ var app = new Vue({
         },
 
         getDomainAPI() {
-            const req = new Request('https://140.124.93.123:8070/node_list?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']&cnt_con=3&rr_con=0.1');
+            const req = new Request('https://159.117.85.248:8079/node_list?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']&cnt_con=3&rr_con=0.1');
             fetch(req)
                 .then(res => res.json())
                 .then(data => {
@@ -227,7 +227,7 @@ var app = new Vue({
         },
 
         getSnaAPI(domain) {
-            const req = new Request('https://140.124.93.123:8070/sna_data?domain=' + domain + '&max_deep=' + this.stage + '&start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']&cnt_con=3&rr_con=0.1');
+            const req = new Request('https://159.117.85.248:8079/sna_data?domain=' + domain + '&max_deep=' + this.stage + '&start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']&cnt_con=3&rr_con=0.1');
 
             window.chartData = null;
             
@@ -248,7 +248,7 @@ var app = new Vue({
         },
 
         getWordCloudAPI() {
-            const req = new Request('https://140.124.93.123:8070/word_cloud?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']')
+            const req = new Request('https://159.117.85.248:8079/word_cloud?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']')
             fetch(req)
                 .then(res => res.json())
                 .then(data => {
@@ -286,7 +286,7 @@ var app = new Vue({
         getLineChartAPI() {
             window.lineChartData = null;
             
-            const req = new Request('https://140.124.93.123:8070/cate_lines?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']&cnt_con=3&rr_con=0.1&csvOrjson=2')
+            const req = new Request('https://159.117.85.248:8079/cate_lines?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']&cnt_con=3&rr_con=0.1&csvOrjson=2')
             fetch(req)
                 .then(res => res.json())
                 .then(data => {
@@ -298,7 +298,7 @@ var app = new Vue({
         },
 
         getArticleAPI() {
-            const req = new Request('https://140.124.93.123:8070/arti_list?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']');
+            const req = new Request('https://159.117.85.248:8079/arti_list?start_time=' + this.startTime + '&end_time=' + this.endTime + '&cate=[' + this.classCheck.toString() + ']');
             fetch(req)
                 .then(res => res.json())
                 .then(data => {
