@@ -52,7 +52,7 @@ html,body {
   background-color: var(--secondaryGrey);
 }
 
-/* --------------- Navbar ---------------- */
+/* --------------- Navbar --------------- */
 .navbar {
   position: sticky;
   top: 0;
@@ -148,10 +148,9 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
   left: -1px;
   border-right: 5px;
 }
-/* --------------- End of Navbar ---------------- */
+/* --------------- End of Navbar --------------- */
 
 /* --------------- Index --------------- */
-
 .phone {
   margin-right: 10%;
   padding: 2rem 0;
@@ -341,7 +340,6 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
   display: flex;
   justify-content: flex-end;
 }
-
 /* --------------- End of 即時報（簡略）--------------- */
 /* --------------- End of Index --------------- */
 
@@ -413,7 +411,6 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
   width: 100%;
   margin-right: 5%;
 }
-
 /* --------------- End of Knowledge --------------- */
 
 /* --------------- About --------------- */
@@ -471,10 +468,9 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
   line-height: 25pt;
   letter-spacing: 1pt;
 }
-
 /* --------------- End of About --------------- */
 
-/* --------------- Hero ---------------- */
+/* --------------- Hero --------------- */
 .hero {
   /* min-height: calc(100vh - 60px); */
   padding: 2rem;
@@ -529,13 +525,9 @@ input {
   padding: .2rem 2rem;
   /* margin: 0 1rem; */
 }
+/* --------------- End of Hero --------------- */
 
-
-
-/* --------------- End of Hero ---------------- */
-
-/* --------------- Products ---------------- */
-
+/* --------------- Products --------------- */
 .horizontal {
   padding: 2rem 2rem;
   display: flex;
@@ -616,11 +608,9 @@ input {
   font-size: 22pt;
   font-weight: bold;
 }
+/* --------------- End of Products --------------- */
 
-/* ---------------End of Products ---------------- */
-
-/*---------- End of Cart Item -------------------- */
-
+/* --------------- Footer --------------- */
 footer {
   display: flex;
   margin-top: 2rem;
@@ -668,4 +658,4 @@ footer {
 .divider{
   padding: 0 1rem;
 }
-/* --------------- End of Cart ---------------- */
+/* --------------- End of Footer --------------- */
