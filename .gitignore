@@ -1,0 +1,5 @@
+.well-known/
+fakenewstw.tk/
+locales/
+node_modules/
+package*.json
