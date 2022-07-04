@@ -404,7 +404,7 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
 }
 
 .knowledge .vertical .img-container img {
-  width: 33%;
+  width: 100%;
 }
 
 .knowledge .vertical.thinking .img-container img {
