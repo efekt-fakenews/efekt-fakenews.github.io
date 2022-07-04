@@ -405,6 +405,10 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
   justify-content: space-between;
 }
 
+.knowledge .vertical.knowledge .img-container img {
+  width: 33%;
+}
+
 .knowledge .vertical.thinking .img-container img {
   width: 100%;
   margin-right: 5%;
