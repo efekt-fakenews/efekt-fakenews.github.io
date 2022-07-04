@@ -83,7 +83,7 @@ var app = new Vue({
         },
 
         apiPost() {
-            axios.post("https://159.117.85.248:8079/search?", this.article)
+            axios.post("https://159.117.85.248:8079/search", this.article)
                 .then(response => {
                     var domainScore;
                     var articleScore;
