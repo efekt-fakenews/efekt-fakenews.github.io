@@ -152,7 +152,6 @@ var app = new Vue({
                 .then(res => res.json())
                 .then(data => {
                     this.setWordCloud(data, 'indexWordcloud')
-                    console.log(data)
             })
         },
 
