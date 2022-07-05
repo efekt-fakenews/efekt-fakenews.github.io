@@ -58,12 +58,13 @@ html,body {
   top: 0;
   height: 50px;
   width: 100%;
+  padding: 0 10%;
   display: flex;
   align-items: center;
   color: var(--mainWhite);
   background: var(--mainGrey);
   box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
-  justify-content:space-around;
+  justify-content:space-between;
   z-index: 1;
 }
 
@@ -293,10 +294,6 @@ ul.drop-down-menu li:hover > ul.second-menu { /* 滑鼠滑入展開次選單*/
 
 .vertical.index .horizontal > .section {
   flex: 5;
-}
-
-.vertical.index .horizontal > .section img {
-  width: 80%;
 }
 
 .vertical.index .horizontal .simRepo-right {

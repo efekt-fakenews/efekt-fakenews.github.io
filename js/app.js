@@ -158,7 +158,7 @@ var app = new Vue({
 
         // --------------------------------------------------------------------------
 
-        changeOption() {
+        changeOption() { // 即時報圖形階層變換
             this.getSnaAPI(window.domain)
         },
 
@@ -328,7 +328,7 @@ var app = new Vue({
         
             const simulation = d3.forceSimulation(nodes)
                 .force("link", d3.forceLink(links).id(d => d.id))
-                .force("charge", d3.forceManyBody().strength(-400))
+                .force("charge", d3.forceManyBody().strength(-400)) // 點距越大越接近，越小越遠
                 .force("x", d3.forceX())
                 .force("y", d3.forceY());
 
